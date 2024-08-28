@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixa do Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixaMae">
+        <div class="caixaPai">
+            <h1>Estoque Luan</h1>
+            <h2>- criar um estoque</h2>
+            <p>- Criar um formulario de entrada dos produtos</p>
+            <p>- criar formulario de pesquisa dos produtos</p>
+            <p>- informar o minimo de produto no estoque</p>
+            <p>- a cada venda dar baixa no produto</p>
+            <p>- dar um relatorio de produtos mais vendido</p>
+           
+
+          <h2>Caixa Luan</h2>
+
+            <p>- pesquisar o produto no formulario</p>
+            <p>- produto, preço, quantidade</p>
+            <p>- tipo de venda (Dinheiro, Cartãio debito, cartão credito e pix)</p>
+            <p>- Valor pago e quantidade de troco 
+            <p>- valor vendido no dia</p>
+            <p>- total vendido mensal</p> 
+            
+            copia do banco de dados 
+
+            create table vendasluan(
+ind int primary key not null auto_increment,
+nome varchar(30)not null,
+codigo varchar(10)not null,
+mercadoria varchar(50)not null,
+valor varchar(20)not null
+)
+select * from vendasluan
+select * from luanestoque
+ 
+ drop table vendasluan
+
+    </div>
+</body>
+</html>

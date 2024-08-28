@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de cliente</title>
+    <link rel="stylesheet" href="usuSen_style.css">
+</head>
+<body>
+
+    <div id="caixaMae" class="caixaMae">
+        <h1>Cadastro de Usuarios</h1>
+        <div class="caixaImagem">
+
+            <img id="imagemPreview" src="#" alt="Prévia da Imagem" style="max-width: 200px; max-height: 200px; display: none;"><br><br>
+            <label for="imagemPerfil">Selecionar arquivo ou foto:</label>
+            <input type="file" name="imagemPerfil" id="imagemPerfil" class="organisaimagem" accept="image/*">
+            
+            <!-- <img src="imagem/mamutebranco.png" class="imagemLogo"> -->
+     </div>
+     <div id="caixaForm">
+
+        <div id="caixaEmpresa" class="caixaOrganisalabelinput">
+         <label>Empresa</label>
+         <input type="text" name="txtEmpresa" id="txtEmpresa" class="inputOrganisa">
+    </div>
+      
+     <div id="caixaNome" class="caixaOrganisalabelinput">
+        <label>Nome</label>
+        <input type="text" name="txtnome" id="txtnome" class="inputOrganisa">
+   </div>
+   <div id="caixaForm" class="caixaOrganisalabelinput">
+        <label>E-mail</label>
+        <input type="email" name="txtEmail" id="txtEmail" class="inputOrganisa">
+   </div>
+   <div id="caixaUsuario" class="caixaOrganisalabelinput">
+        <label>Usuario</label>
+        <input type="text" name="textUsuario" id="txtUsuario" class="inputOrganisa">
+ </div>
+    <div id="caixaSenha" class="caixaOrganisalabelinput">
+        <label>Semha</label>
+        <input type="password" name="pasSenha" id="pasSenha" class="inputOrganisa">
+    </div>
+     
+    <div class="organisaBotao">
+        <button type="submit" id="botaoEnviar" class="botaoEnviar">Enviar</button> 
+         <button id="botaoAbrirLogin" class="botaoEstiloLogin"> Ir Para Login</button>
+    </div>
+
+</div>
+   
+
+    <div id="message" class="messageStilo"></div>   
+ <div class="organisaImagem">
+        <img src="imagem/mamutebranco.png" class="imagemLogoCadastro">  
+     </div>
+    <script src="index.js"></script>
+    <script src="cadastroDEUsuarios.js"></script>
+</body>
+</html>

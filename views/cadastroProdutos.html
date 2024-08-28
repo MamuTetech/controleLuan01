@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="estCaixa_style.css">
+</head>
+<body>
+    <main>
+        <div id="caixaCabesalho" class="caixaCabesalho">
+            <!-- <img src="imagem/mamutebranco.png" class="imagemLogo"> -->
+      </div>
+         <h1 class="h1Cabecalho">Cadastro de Produtos</h1> 
+         <div id="mess" class="messageStilo"></div>
+        <div class="caixaMae">
+
+            
+           <div class="caixapai">
+            <label>Codigo</label>
+           <input type="number" name="numCodigo" id="numCodigo" class="inputValores">
+           </div>
+
+           <div class="caixapai">
+           <label>Mercadoria</label>
+           <input type="text" name="txtMercadoria" id="txtMercadoria" class="inputMercadoria">
+           </div>
+
+           <div class="caixapai">
+           <label>Valor</label>
+           <input type="number" name="numValor" id="numValor" class="inputValores">
+           </div>
+
+           <div class="caixapai">
+          <button id="botaoEnviar" class="botaoEnviar">Selecionar</button>
+          </div>
+
+        </div>  
+
+        <div class="organisacaixaMercadorias">
+            <div class="divMercadEValorTotal">
+                <div id="caixaMercadorias" class="caixaMercadorias"></div> 
+                <div id="DivvalorTotal" class="DivvalorTotal"></div>
+               
+            </div>
+           
+           <button id="botaoFinalizar" class="botaoEnviarCadastro">Enviar</button>
+        </div>
+        <div class="organisaImagem">
+           <img src="imagem/mamutebranco.png" class="imagemLogo">  
+        </div>
+     </main>
+    <script src="cadastroProdutos.js"></script>
+</body>
+</html>

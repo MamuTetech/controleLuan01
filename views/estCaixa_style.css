@@ -1,0 +1,786 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   /* border: 1px solid #f00; */
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(165, 164, 164);
+    padding-top: 30px;
+    /* border: 1px solid #f00; */
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #f00; */
+    background-color: #ddd;
+    width: 100%;
+    height: 100vh;
+}
+.botaoTodos{
+ background-color: rgb(47, 54, 58);
+/* background-color: #248; */
+box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+color: rgb(245, 239, 229);
+text-transform: uppercase;
+font-size: 1em;
+padding: 10px;
+cursor: pointer;
+border-radius: 10px 10px 0px 0px;
+margin-left: 20px;
+}
+.botaoTodos:hover{
+    font-size: 0.9em; 
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.473);
+}
+.botaoSelecionado{
+    background-color: #ddd !important;  
+    color: black;
+}
+.if_principal{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* -----------cadastro produtos------------ */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  
+}
+.caixaMae{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+
+}
+.caixapai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+}
+.inputMercadoria{
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.445);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5em;
+    width: 500px;
+    height: 40px;
+    margin-left: 10px;
+
+}
+.caixaMercadorias{
+    border: 2px solid #248;
+    background-color: white;
+    width: 90%;
+    height: 35vh;
+    padding: 10px;
+    overflow: auto;
+
+}
+.divMercadEValorTotal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+   
+}
+.DivvalorTotal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid  #248; 
+    background-color: white;
+    width: 80px;
+    height: 60px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 3em;
+}
+.organisacaixaMercadorias{
+   
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.botaoEnviarCadastro{
+    background-color: rgb(47, 54, 58);
+    /* background-color: #248; */
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.336);
+    color: white;
+    margin-top: 29px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.inputValores{
+    border-radius: 10px;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.336);
+    width: 100px;
+    font-size: 1.5em;
+    text-align: center;
+    height: 40px;
+    margin-left: 10px;
+}
+.botaoEnviar{
+    /* background-color: #248; */
+    background-color: rgb(47, 54, 58);
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.336);
+    color: white;
+    margin-top: 29px;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+   
+}
+.botaoEnviar:hover{
+    /* background-color: rgb(95, 140, 230); */
+    background-color: rgb(47, 54, 58);
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.479);
+    width: 96px;
+    height: 36px; 
+
+}
+label{
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+.caixapai{
+   
+    height: 100%;
+}
+.logoLuan{
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+/* ---------------------peaquisar mercadoria---------------------- */
+.caixapesquisar{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.labelPesquisar{
+    margin-left: 40px;
+}
+.txtPesquisar{
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.botaopesquisar{
+    /* background-color: #248; */
+    background-color: rgb(47, 54, 58);
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    color: rgb(245, 239, 229);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 20px;
+
+}
+.botaopesquisar:hover{
+    background-color: rgb(94, 94, 95);
+    font-size: 0.9em;
+    
+
+}
+.caixaProdutos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #248;
+    background-color: white;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    margin-top: 5px;
+    width: 75%;
+    padding: 10px;
+   
+
+}
+.receberProdutos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #248;
+    background-color: white;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    margin-top: 40px;
+    width: 75%;
+    padding: 10px;
+    margin-left: 10px;
+}
+ .produstoRepor{ /*class para indicar que precisa repor o produto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid rgb(236, 103, 103) !important;
+    background-color: white !important;
+    color: rgb(236, 103, 103) !important;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    margin-top: 40px;
+    width: 85%;
+    padding: 10px;
+    margin-right: 2.5px;
+}
+.quantidadeProdutos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #248;
+    background-color: white;
+    font-size: 2em;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    margin-top: 40px;
+    width: 20%;
+    padding: 10px;
+    margin-left: 2.5px;
+    border-radius: 10px;
+}
+.produtosMae{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row; 
+    width: 100%;
+    margin-bottom: 30px;
+}
+.DivParagrafos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+.paragrafoOrg01{
+     /* border: 1px solid red; */
+     font-size: 2em;
+     
+}
+.paragrafoOrg02{
+     text-align: center;
+     /* border: 1px solid red; */
+
+   
+     font-size: 2em;
+}
+.paragrafoOrg03{
+    /* border: 1px solid red; */
+    font-size: 2em;
+}
+.dadosDB{
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5em;
+
+  
+}
+#dadosCod01{
+   margin-right: 20px;
+   margin-left: 5%;
+
+}
+#dadosCod02{
+    text-align: center;
+    width: 80%;
+}
+#dadosCod03{
+margin-left: 20px;
+width: 15%;
+text-align: center;
+}
+.DivOrganisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid rgb(223, 34, 34);
+    margin: 5px;
+    width: 100%;
+}
+#QuantidadeP{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+}
+
+/* ------------css do caixa---------------------- */
+
+
+.caixaCabesalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(84, 90, 99);
+    /* background-color: rgb(94, 123, 180); */
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 8px;
+
+}
+.caixaCaixMae{
+    padding-bottom: 20px;
+    overflow-x: hidden;
+}
+.organisaH1eImagem{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.caixaProduto{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+
+.organisaEscolhidor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.receberMercadoriaCaixa{
+
+    border: 3px solid #248;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.308);
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+}
+.MercadoriaEscolhida{
+    border: 3px solid #248;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.308);
+    border-radius: 10px 10px 0px 0px;
+    margin-right: 9.3%;
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+}
+.valorControle{
+    border: 3px solid #248;
+    background-color: white;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.411);
+    padding: 10px;
+    height: 50px;
+    margin-bottom: 50px;
+
+    }
+ .valorControleTroco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    width: 70%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+ }   
+
+.valorEvalor{
+    background-color: rgb(187, 186, 186);
+    border: 2px solid gray;
+    box-shadow: inset 3px 0px 3px rgba(0, 0, 0, 0.473);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    width: 20%;
+}
+.h1Cabecalho{
+    margin: 10px;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+   
+}
+.caixaPesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.caixaCodigo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-right: 10px;
+  
+}
+.caixaMercadoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.botaoCaixa{
+    /* background-color: #248; */
+    background-color: rgb(47, 54, 58);
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    color: rgb(245, 239, 229);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 5px;
+
+}
+.caixaNome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+    
+}
+.MercForm{
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 400px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.codigoForm{
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    width: 80px;
+    text-align: center;  
+}
+.nomeInput{
+    
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    width: 400px;
+    text-align: center;
+}
+.inputValorPago{
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.411);
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.divReceber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 1.5em;
+}
+.divDiferente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    color: black;
+    font-size: 1em;
+}
+.caPro{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px;
+
+}
+.valorControle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+.botaoCalcular{
+    /* background-color: #248; */
+    background-color: rgb(47, 54, 58);
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    color: rgb(245, 239, 229);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+
+}
+/* --------div dos produtos----------- */
+.labelTroco{
+    font-size: 1.5em;
+}
+#quant{
+    width: 50px;
+    background-color: rgb(223, 223, 223);
+}
+.alertaquant{ /* class para alertar quantidade de produto */
+    border: 2px solid rgb(179, 3, 3);
+    background-color: rgb(235, 225, 225);
+    color: rgb(240, 7, 7);
+}
+#val{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 120px;
+    background-color: rgb(223, 223, 223);
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+#cod{
+    width: 70px;
+    background-color: rgb(223, 223, 223);
+}
+#merc{
+   width: 50%;
+   background-color: rgb(223, 223, 223);
+   cursor: pointer;
+   text-align: center;
+}
+#nom{
+    width: 30%;
+   
+}
+.icolixeira{
+    cursor: pointer;
+    margin-right: 10px;
+}
+.dat{
+    font-size: 0.8em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.organisaBotao{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+.divDiferente{
+    color: white;
+}
+/* -------------CSS produtos mais vendidos--------------- */
+.MercadoriaMaisVendidas{
+border: 3px solid #248;
+box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.308);
+width: 80%;
+height: 50vh;
+padding: 10px;
+overflow: auto;
+background-color: white;
+}
+
+.maisVendidosMae{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+   
+}
+
+/* -----------css total Vendas--------------- */
+.organisaBotaoEdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.caixaValor{
+    background-color: white;
+    border: 3px solid #248;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+    padding: 7px;
+    width: 100%;
+    height: 40vh;
+    overflow: auto;
+    font-size: 0.7em;
+}
+.caixaDiarioorganisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    height: 40vh;
+    color: #248;
+    font-size: 2em;
+}
+.ParagDiv{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;  
+    margin-left: 15px;
+    width: 80%;
+}
+.caixaTotal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #248;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    width: 200px;
+    height: 60px;
+    margin-left: 20px;
+}
+.botaoTotalVendas{
+    /* background-color: #248; */
+    background-color: rgb(47, 54, 58);
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.473);
+    color: rgb(245, 239, 229);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+
+}
+.divRec{
+   border: 2px solid rgb(95, 95, 95);
+   padding: 3px;
+}
+.imagemLogo{
+    width: 150px;
+    margin: 10px;
+}
+.messageStilo{
+    font-size: 2em;
+    color: rgb(240, 83, 83);
+    
+  }
+
+  /* -----------Mensagem de falta de mercadoria--------- */
+  .organisaMensage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mensagemEstilo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid rgb(245, 71, 71);
+    color: rgb(228, 15, 15);
+    font-size: 2em;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 30%;
+}
+/* loguin e senha dos produtos mais vendidos */
+.fundopopup{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999999999999999;
+  }
+/* ------organisa a posição da imagem------- */
+.organisaImagem {
+  
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    padding-top: 30px;
+  }
+  #caixaHomeImagem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
+  

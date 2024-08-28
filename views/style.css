@@ -1,0 +1,16 @@
+.caixaMae{
+    width: 100%;
+    height: 100%;
+}
+.caixaPai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+
+}
+h1{
+    margin-bottom: 30px;
+}
+

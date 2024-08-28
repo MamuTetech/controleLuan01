@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa</title>
+    <link rel="stylesheet" href="estCaixa_style.css">
+</head>
+<body>
+    <div id="caixaCabesalho" class="caixaCabesalho">
+       
+    </div>
+
+    <div id="caixaCaixMae" class="caixaCaixMae">
+          <h1 class="h1Cabecalho">Caixa</h1>    
+        <div id="caixaCaixPai" class="caixaCaixPai">
+            <div id="caixaPesquisa" class="caixaPesquisa">
+
+                <div class="caixaNome">
+                <label>Nome do Cliente</label>
+                <input type="text" name="nomeInput" id="nomeInput" class="nomeInput">
+                </div>
+
+                <div class="caixaCodigo">
+                <label>Codigo</label>
+                <input type="text" name="codInput" id="codInput" class="codigoForm">
+                </div>
+
+                <div class="caixaMercadoria">
+                <label>Mercadoria</label>
+                <input type="text" name="mercInput" id="mercInput" class="MercForm">
+                </div>
+                <button id="botaoCaixa" class="botaoCaixa">Selecionar</button>
+            </div>
+            <div class="organisaMensage">
+               <div id="mensagem"></div> 
+             
+            </div>
+
+            
+            
+             <div class="caixaProduto">
+                  <div class="organisaEscolhidor">
+                  <div id="MercadoriaEscolhida" 
+                  class="MercadoriaEscolhida"> <div id="valorTo"></div></div> 
+                  <div class="organisaBotao">
+                  <div id="receberMercadoriaCaixa" class="receberMercadoriaCaixa"></div>
+                  <button id="botaoEnviar" class="botaoCaixa">Finalizar</button>
+                  </div> 
+                  
+                 </div>
+
+                  <div id="valorEvalor" class="valorEvalor">
+                    <label>Digite o Valor</label>
+                    <input type="text" name="ValorPago" id="ValorPago" class="inputValorPago">
+                    
+                    <p class="labelTroco">Valor</p>
+                    <div id="valormercadoria" class="valorControle"></div>
+                    
+                    <button id="botaoCalcular" class="botaoCalcular">Calcular</button>
+                    <p class="labelTroco">Troco</p>
+                    <div id="valorCliente" class="valorControleTroco"><p>R$-</p></div> 
+                 </div>
+                
+            </div>
+        </div>
+         
+        <img src="imagem/mamutebranco.png" class="imagemLogo">
+    </div>
+    
+<script src="caixa.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Produto</title>
+    <link rel="stylesheet" href="estCaixa_style.css">
+</head>
+<body>
+    <main>
+     <div id="caixaCabesalho" class="caixaCabesalho">
+        <!-- <img src="imagem/mamutebranco.png" class="imagemLogo">     -->
+    </div>
+    <h1 class="h1Cabecalho">Pesquisar</h1> 
+    <div id="CaixaMae" class="caixapesquisar">
+         
+        <div id="caixaPai" class="caixapesquisar">
+        <label class="labelPesquisar">Codigo</label>
+        <input type="text" name="numCodigo" id="numCodigo" class="txtPesquisar">
+        </div>
+
+        <div id="caixaPai" class="caixapesquisar">
+        <label class="labelPesquisar">Mercadoria</label>
+        <input type="text" name="txtMercadoria" id="txtMercadoria" class="txtPesquisar">
+    </div>
+
+    <div id="caixaPai" class="caixapesquisar">
+        <button id="botaoPesquisar" class="botaopesquisar">Pesquisar</button>
+    </div>
+    </div>
+     
+    <div class="produtosMae">
+       <div id="receberProdutos" class="receberProdutos">
+        <div class="DivParagrafos">
+        <p class="paragrafoOrg01">Codigo</p>
+        <p class="paragrafoOrg02">Mercadoria</p>
+        <p class="paragrafoOrg03">Preço</p>
+      </div>
+        <div id="caixaProdutos" class="caixaProdutos"></div>
+        </div> 
+       
+        <div id="quantidadeProdutos" class="quantidadeProdutos">
+                <p>Quantidade</p>
+                <div id="QuantidadeP"></div>
+            </div>
+       
+    </div>
+   <div class="organisaImagem">
+        <img src="imagem/mamutebranco.png" class="imagemLogo">  
+     </div>
+    <script src="pesquisa.js"></script>
+</body>
+</html>
